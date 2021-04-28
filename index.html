@@ -13,35 +13,21 @@
 
   <div class="field">
     <span class="single" id="number">
-      <span class="abc">1</span>
-      <span class="bca"></span>
+      <span class="abc"></span>
     </span>
   <button class="btn" onclick="closeFunc(), setTimeout(openFunc, 300)">НАЖМИ</button>
   </div>
   <script>
+      let arr = ['Ну тут я не придумал что вставить', 'Это вторая рандомная фраза', 'Это третья, но может выпасть первой', 'А тут цвет твоего нижнего белья: белый'];
       function closeFunc() {
           const abc = document.querySelector('.abc');
-          const bca = document.querySelector('.bca');
           abc.style.transform = 'translateY(-50px)';
-          bca.style.transform = 'translateY(-70px)';
-          abc.textContent = '';
-          bca.textContent = '';
         }
         function openFunc() {
           const abc = document.querySelector('.abc');
-          const bca = document.querySelector('.bca');
-          let number = Math.floor(Math.random() * 99);
-          console.log(number);
-          if (number >= 10) {
-            let a = parseInt(number / 10);
-            let b = parseInt(number - a * 10);
-            abc.textContent = a;
-            bca.textContent = b;
-          } else {
-            abc.textContent = number;
-          }
+          let number = Math.floor(Math.random() * 4);
+          abc.textContent = arr[number];
           abc.style.transform = 'translateY(0)';
-          bca.style.transform = 'translateY(0)';
         }
 
   </script>

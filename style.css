@@ -1,21 +1,16 @@
 .single {
   display: flex;
   font-size: 30px;
-  width: 50px;
-  height: 35px;
+  width: 500px;
+  height: auto;
 }
 .field {
   width: 100px;
   height: 100px;
   margin: 200px auto;
   text-align: center;
-  overflow: hidden;
 }
 .abc {
-  display: block;
-  transition: transform 0.4s ease;
-}
-.bca {
-  display: block;
+  width: 500px;
   transition: transform 0.4s ease;
 }
